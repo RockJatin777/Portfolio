@@ -29,3 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initially hide the scroll button on page load
     toggleScrollBtn();
 });
+
+resumeButton = document.getElementById("resumeButton");
+
+document.getElementById("resumeButton").addEventListener("click", () => {
+    let resume = document.getElementById("resume");
+    resume.style.display = (resume.style.display === "none" || resume.style.display === "") ? "block" : "none";
+});
