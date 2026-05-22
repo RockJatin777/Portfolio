@@ -1,425 +1,983 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Meta tags for character set, viewport settings, description, keywords, and author information -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="YASH KOLADIYA - Full Stack Web Developer Portfolio. View my projects, skills, and contact information.">
-    <meta name="keywords" content="Jitin Gupta, Portfolio, Full Stack Web Developer, MERN Stack, Projects, Skills">
-    <meta name="author" content="Jitin Gupta">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="YASH KOLADIYA - Full Stack Web Developer Portfolio. View my projects, skills, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="Jitin Gupta, Portfolio, Full Stack Web Developer, MERN Stack, Projects, Skills"
+    />
+    <meta name="author" content="Jitin Gupta" />
 
     <!-- Page title -->
     <title>JITIN GUPTA - Portfolio</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
     <!-- AOS (Animate on Scroll) CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Header with Navbar -->
     <header class="fixed-top" data-aos="fade-down">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://signature.freefire-name.com/img.php?f=3&t=Jatin" alt="signature" width="100">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://signature.freefire-name.com/img.php?f=3&t=Jatin"
+              alt="signature"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-hover" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- Home section -->
-        <section id="home">
-            <div class="container row flex-wrap-reverse">
-                <div class="col-md-8 d-flex flex-column justify-content-center" data-aos="fade-right">
-                    <h1 class="display-5 fw-bold mb-3">👋 Hello I am JITIN GUPTA </h1>
-                    <p class="px-2 flex">I am a <span id="typed-text"></span></p>
-                    <div class="d-flex gap-3 fs-3 px-2">
-                        <a href="https://www.linkedin.com/in/jitin6394/" target="_blank" class="list-group-item"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/jatin__0105/" target="_blank" class="list-group-item"><i
-                                class="fa-brands fa-instagram"></i></a>
+      <!-- Home section -->
+      <section id="home">
+        <div class="container row flex-wrap-reverse">
+          <div
+            class="col-md-8 d-flex flex-column justify-content-center"
+            data-aos="fade-right"
+          >
+            <h1 class="display-5 fw-bold mb-3">👋 Hello I am JITIN GUPTA</h1>
+            <p class="px-2 flex">I am a <span id="typed-text"></span></p>
+            <div class="d-flex gap-3 fs-3 px-2">
+              <a
+                href="https://www.linkedin.com/in/jitin6394/"
+                target="_blank"
+                class="list-group-item"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jatin__0105/"
+                target="_blank"
+                class="list-group-item"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
 
-                        <a href="https://www.facebook.com/profile.php?id=100024982448513" target="_blank" class="list-group-item"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/Jitingupta557" class="list-group-item"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="https://github.com/RockJatin777" target="_blank" class="list-group-item"><i 
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center" data-aos="fade-left">
-                    <img src="Jitin's_photo.jpg" class="img-fluid border rounded-circle"
-                        alt="Jitin Gupta profile" loading="lazy" width="300">
-                </div>
+              <a
+                href="https://www.facebook.com/profile.php?id=100024982448513"
+                target="_blank"
+                class="list-group-item"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://x.com/Jitingupta557" class="list-group-item"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/JatinGupta007"
+                target="_blank"
+                class="list-group-item"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
-            <button class="btn btn-dark" id="scrollBtn">
-                <i class="fa-solid fa-arrow-up"></i>
+          </div>
+          <div class="col-md-4 text-center" data-aos="fade-left">
+            <img
+              src="Jitin'sImage.png"
+              class="img-fluid border rounded-circle"
+              alt="Jitin Gupta profile"
+              loading="lazy"
+              width="300"
+            />
+          </div>
+        </div>
+        <button class="btn btn-dark" id="scrollBtn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="container py-5 mb-5">
+          <h1
+            class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+            data-aos="fade-up"
+          >
+            About Me
+          </h1>
+          <p class="fs-5" data-aos="fade-up">
+            I am a highly motivated and passionate software developer completed
+            Master of Computer Applications (MCA) from Invertis University and
+            Bachelor of Business Administration (BBA) from Hierank Business
+            School. I have completed Full Stack Development training from
+            NxtWave and built strong technical skills through real-world
+            projects and internship experience. <br />
+            <br />
+
+            Currently, I have worked as a Full Stack Developer Intern at Yashik
+            Yadav & Co, where I contributed to developing scalable healthcare
+            solutions using React.js, Next.js, Node.js, Express.js, and MongoDB.
+            I worked on features such as authentication systems, user
+            dashboards, responsive UI, and backend API integration while
+            collaborating with the team using Git and agile development
+            practices. <br />
+            <br />
+
+            I have hands-on experience in building modern web applications using
+            HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React.js, Next.js,
+            Node.js, Express.js, MongoDB, SQL, Python, Git, and REST APIs. I
+            have developed projects like Fillip, a marketing application with
+            email integration using Nodemailer, and Nxt Trendz, a full-stack
+            e-commerce platform with secure JWT authentication, server-side
+            filtering, and dynamic product management. <br />
+            <br />
+
+            Along with technical expertise, I possess strong communication,
+            problem-solving, adaptability, and teamwork skills. I am eager to
+            contribute to innovative projects, continuously learn new
+            technologies, and grow as a Full Stack Developer in a collaborative
+            environment. Fluent in both English and Hindi, I am always ready to
+            take on new challenges and deliver impactful solutions.
+          </p>
+          <div class="d-flex gap-2" data-aos="fade-up">
+            <button id="resumeButton" class="btn btn-dark" type="button">
+              My Resume
             </button>
-        </section>
-        <!-- About section -->
-        <section id="about">
-            <div class="container py-5 mb-5">
+            <a href="#contact" class="btn btn-outline-secondary">Contact Me</a>
+          </div>
 
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-up">About Me</h1>
-                <p class="fs-5" data-aos="fade-up">I am a highly motivated Bachelor of Business Administration (BBA)
-                    graduate from
-                    Chaudhary Charan Singh (CCS) University in Noida, pursued a Full Stack Development Course from NxtWave and Pursuing Master of Computer Application (MCA) from Invertis UNIVERSITY With a strong passion for software development, I have
-                    honed my
-                    skills in Python, HTML, CSS, JavaScript, Bootstrap, Git,  Reactjs, Nodejs, MongoDB and SQL through various hands-on projects. My experience
-                    includes
-                    designing and developing an eCommerce website, which showcase my
-                    ability to
-                    create responsive and dynamic web applications. I am proficient in user authentication, data
-                    security, and
-                    advanced search and filtering options. Additionally, I hold certifications in these technologies. I am eager to contribute to a dynamic team, leveraging my strong communication,
-                    problem-solving, and
-                    creative skills to tackle challenging projects. Fluent in English and Hindi, I am ready to bring
-                    my
-                    expertise to a collaborative and innovative work environment.
-                    Thank you for visiting my website. Feel free to contact me or connect with me on social media.</p>
-                <div class="d-flex gap-2" data-aos="fade-up">
-                    <button id="resumeButton" class="btn btn-dark" type="button">My Resume</button>
-                    <a href="#contact" class="btn btn-outline-secondary ">Contact Me</a>
-                </div>
+          <div id="resume" class="resume-container">
+            <h1>Jitin Gupta</h1>
+            <h2>Full Stack Developer</h2>
 
-                <div id="resume" class="resume-container">
-                    <h1>Jitin Gupta</h1>
-                    <h2>Full Stack Developer</h2>
-                
-                    <div class="section contact-info">
-                        <p>📞 6394184834</p>
-                        <p>📧 jitingupta09922@gmail.com</p>
-                        <p>🔗 <a href="https://linkedin.com/in/jitin6394/" target="_blank">LinkedIn</a></p>
-                        <p>📍 Bareilly, Uttar Pradesh</p>
-                    </div>
-                
-                    <div class="section profile-summary">
-                        <h2>Profile Summary</h2>
-                        <p>Motivated and detail-oriented aspiring Full Stack Developer with a passion for building efficient and
-                            user-friendly web applications...</p>
-                    </div>
-                
-                    <div class="section projects">
-                        <h2>Projects</h2>
-                        <ul>
-                            <li>
-                                <strong>Nxt Watch (YouTube Clone)</strong> - Dec 2024 (3 days)
-                                <p>Technologies: React JS, JavaScript, CSS, Bootstrap, REST API</p>
-                                <p>Developed a YouTube alternative allowing users to log in, browse video categories, and view saved
-                                    videos.</p>
-                            </li>
-                            <li>
-                                <strong>Nxt Trendz (ECommerce Clone)</strong> - Jan 2024 (4 days)
-                                <p>Technologies: React JS, CSS, Bootstrap, JWT Token</p>
-                                <p>Created an e-commerce platform inspired by Amazon and Flipkart.</p>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <div class="section education">
-                        <h2>Education</h2>
-                        <p><strong>Masters (MCA)</strong> - Invertis University (2024 - 2026)</p>
-                        <p><strong>Bachelor's (BBA)</strong> - Chaudhary Charan Singh (2021 - 2024)</p>
-                        <p><strong>10+2</strong> - Rosy Public School (2020)</p>
-                        <p><strong>10</strong> - Rosy Public School (2018)</p>
-                    </div>
-                
-                    <div class="section competencies">
-                        <h2>Core Competencies</h2>
-                        <ul>
-                            <li>Frontend: HTML, CSS, JS, React</li>
-                            <li>Backend: Node.js, SQL, MongoDB</li>
-                            <li>Other: DSA, Python, Tailwind, Git</li>
-                            <li>Soft Skills: Team Management, Problem Solving</li>
-                        </ul>
-                    </div>
-                
-                    <div class="section hobbies">
-                        <h2>Hobbies</h2>
-                        <ul>
-                            <li>Exploring new technologies</li>
-                            <li>Playing Chess and Table Tennis</li>
-                            <li>Internet Surfing</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Education section -->
-        <section id="education">
-            <div class="container py-5" id="featured-3">
-                <h2 class="pb-2 border-bottom border-dark" data-aos="fade-up">Education</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
-                    <div class="col p-3">
-                        <div class="education p-3 rounded" data-aos="flip-right">
-
-                            <i class="fa-solid fa-graduation-cap fs-2 mb-4"></i>
-
-                            <h3 class="fs-3">BBA (2021-2024)</h3>
-                            <p class="fs-5">CHAUDHARY CHARAN SINGH UNIVERSITY</p>
-                            <p>Passed the examination in 2024.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="col p-3">
-                        <div class="education p-3 rounded" data-aos="flip-right">
-                    
-                            <i class="fa-solid fa-graduation-cap fs-2 mb-4"></i>
-                    
-                            <h3 class="fs-3">Web Developer Course (2022-2024)</h3>
-                            <p class="fs-5">Nxtwave CCBP 4.0 Academy</p>
-                            <p>Passed the examination in 2024.</p>
-                        </div>
-                    
-                    </div>
-
-                    <div class="col p-3">
-                        <div class="education p-3 rounded" style="height: 250px;" data-aos="flip-right">
-                    
-                            <i class="fa-solid fa-graduation-cap fs-2 mb-4"></i>
-                    
-                            <h3 class="fs-3">MCA (2024-2026)</h3>
-                            <p class="fs-5">INVERTIS UNIVERSITY</p>
-                            <p>will pass the examination in 2026.</p>
-                        </div>
-                    
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Skills section -->
-        <section id="skills" class="py-5">
-            <h2 class="text-center mb-5" data-aos="fade-up">My Skills</h2>
-            <div class="container-fluid d-flex flex-wrap gap-3 align-items-center justify-content-center display-5">
-
-                <i class="fa-brands fa-html5" data-aos="zoom-in"></i>
-                <i class="fa-brands fa-css3" data-aos="zoom-in"></i>
-                <i class="fa-brands fa-js" data-aos="zoom-in"></i>
-                <i class="fa-brands fa-bootstrap" data-aos="zoom-in"></i>
-                <i class="fa-brands fa-react" data-aos="zoom-in"></i>
-                <i class="fa-brands fa-node" data-aos="zoom-in"></i>
-                <i class="fa-solid fa-database" data-aos="zoom-in"></i>
-                <i class="fa-brands fa-python" data-aos="zoom-in"></i>
-
-            </div>
-        </section>
-        <!-- Projects section -->
-        <section id="projects" class="py-5 my-5">
-            <h2 class="text-center" data-aos="fade-up">My Projects</h2>
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <img src="ecomerce_app_image.png"
-                                alt="project" class="card-img-top" style="height: 250px;">
-                            <div class="card-body">
-
-                                <h5 class="card-title">E-commerce App</h5>
-                                <p class="card-text small">Implemented Nxt Trendz application which is a clone for ECommerce applications
-                                like Amazon, Flipkart where users can login and can see list of products with
-                                search, filters, sort by, etc. Reactjs/CSS/API</p>
-                                <div class="d-flex gap-3 fs-4">
-                                    <a href="https://github.com/RockJatin777/Product-ecommerce-app" class="list-group-item"><i
-                                            class="fa-brands fa-github"></i></a>
-                                    <a href="https://nxtrentzbyjitin.ccbp.tech/" class="list-group-item"><i class="fa-solid fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <img src="emoji_game_image.png"
-                                alt="project" class="card-img-top" style="height: 250px;">
-                            <div class="card-body">
-                                <h5 class="card-title">Emoji Game App</h5>
-                                <p class="card-text">Designed a fun, challenging memory game with randomized emoji clicks.
-                                Utilized React components, props, conditional rendering, and state
-                                updates to create dynamic gameplay.
-                                EnhancedwithCSSfor a visually appealing design. Reactjs/CSS</p>
-                                <div class="d-flex gap-3 fs-4">
-                                    <a href="https://github.com/RockJatin777/Emoji-Game"
-                                        class="list-group-item"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://jitinemojigame.ccbp.tech/" class="list-group-item"><i class="fa-solid fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <img src="Nxt_watchapp_pic.png"
-                                alt="project" class="card-img-top" style="height: 250px;">
-                            <div class="card-body">
-                                <h5 class="card-title">Nxtwatch App</h5>
-                                <p class="card-text small">Implemented Nxt Watch application which is a clone for YouTube where users
-                                can log in and can see a list of videos like Trending, Gaming, Saved videos, and
-                                also can search videos and view specific video details, and users can toggle the
-                                theme (Light/Dark). React/CSS/API</p>
-                                <div class="d-flex gap-3 fs-4">
-                                    <a href="https://github.com/RockJatin777/NxtWatchApp" class="list-group-item">
-                                        <i class="fa-brands fa-github"></i></a>
-                                    <a href="https://nxtwatchbyjitin.ccbp.tech/" class="list-group-item"><i class="fa-solid fa-link"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <img src="Blogapp_pic.png"
-                                alt="project" class="card-img-top" style="height: 250px;">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog App </h5>
-                                <p class="card-text small">This dynamic blog app is designed for seamless content creation and management. You can
-                                easily add new blog posts, update existing content, delete unwanted entries, and browse through all your published
-                                articles. Whether you're a casual blogger or managing a professional platform. React/CSS</p>
-                                <div class="d-flex gap-3 fs-4">
-                                    <a href="https://github.com/RockJatin777/blog-assignment"
-                                        class="list-group-item"></a><i class="fa-brands fa-github"></i>
-                                    <a href="https://blog-assignment-five.vercel.app/" class="list-group-item"><i class="fa-solid fa-link"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <img src="Todoapp_pic.png"
-                                alt="project" class="card-img-top" style="height: 250px;">
-                            <div class="card-body">
-                                <h5 class="card-title">Todo App</h5>
-                                <p class="card-text small">This Todo app is a powerful app for managing your tasks efficiently. it allows you to
-                                create new tasks, update existing ones, delete completed or irrelevant items, and view your entire task list at a
-                                glance.this app ensures that you have complete control over
-                                your task management. React/CSS/SQLite/Express</p>
-                                <div class="d-flex gap-3 fs-4">
-                                    <a href="https://github.com/RockJatin777/Todo-App"
-                                        class="list-group-item"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://todo-app-murex-mu.vercel.app/" class="list-group-item"><i class="fa-solid fa-link"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <img src="Weatherapp_pic.png"
-                                alt="project" class="card-img-top" style="height: 250px;">
-                            <div class="card-body">
-                                <h5 class="card-title">Weather APP</h5>
-                                <p class="card-text small">Our Weather app provides timely updates, expert
-                                analysis, Discover the impact of weather patterns and enjoy a personalized reading experience powered by the React
-                                Weather API. React/CSS/API</p>
-                                <div class="d-flex gap-3 fs-4">
-                                    <a href="https://github.com/RockJatin777/Weather-app"
-                                        class="list-group-item"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://weather-app-theta-five-11.vercel.app/" class="list-group-item"><i class="fa-solid fa-link"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="section contact-info">
+              <p>📞 +91 6394184834</p>
+              <p>📧 rockjatin0748@gmail.com</p>
+              <p>
+                🔗
+                <a href="https://linkedin.com/in/jitin6394/" target="_blank"
+                  >LinkedIn</a
+                >
+              </p>
+              <p>📍 Bareilly, Uttar Pradesh, India</p>
             </div>
 
-        </section>
-        <!-- Contact section -->
-        <section id="contact" data-aos="fade-up">
-            <div class="container">
-                <div class="row my-5 py-5">
-                    <div class="col-md-6 d-flex flex-column align-items-start justify-content-center">
-                        <h1 class="display-5 fw-bold mb-3">Contact Me</h1>
-                        <p class="fs-5">Prefer email? Reach out to me at <i class="fa-solid envelope"></i> <a
-                                href="mailto:rockjatin0748@gmail.com" target="_blank">rockjatin0748@gmail.com</a></p>
-                        <p class="fs-5"><i class="fa-solid fa-phone"></i>+91 6394184834</p>
-                    </div>
-                </div>
+            <div class="section profile-summary">
+              <h2>Profile Summary</h2>
+              <p>
+                Highly motivated and passionate Full Stack Developer currently
+                pursuing MCA from Invertis University. Skilled in building
+                responsive and scalable web applications using React.js,
+                Next.js, Node.js, Express.js, MongoDB, SQL, and Tailwind CSS.
+                Experienced in developing full-stack projects, implementing
+                authentication systems, REST APIs, and responsive UI designs.
+                Strong problem-solving, teamwork, and communication skills with
+                a passion for learning new technologies.
+              </p>
             </div>
-        </section>
+
+            <div class="section internship">
+              <h2>Internship</h2>
+
+              <ul>
+                <li>
+                  <strong
+                    >Full Stack Developer Intern – Yashik Yadav & Co.</strong
+                  ><br />
+                  <strong>Project:</strong> ApnaOPD.com <br />
+                  <strong>Duration:</strong> June 2025 – December 2025
+                  <p>
+                    Worked on frontend and backend development using React.js,
+                    Next.js, Node.js, Express.js, and MongoDB. Developed
+                    authentication systems, dashboards, responsive UI, and API
+                    integrations while collaborating with the team using Git.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section projects">
+              <h2>Projects</h2>
+
+              <ul>
+                <li>
+                  <strong>Fillip – Marketing Application</strong> - Apr 2026
+                  <p>
+                    <strong>Technologies:</strong> Next.js, Tailwind CSS,
+                    Node.js, Express.js, MongoDB
+                  </p>
+                  <p>
+                    Developed a responsive marketing platform with backend APIs
+                    and MongoDB integration. Implemented email functionality
+                    using Nodemailer for contact forms and notifications.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Nxt Trendz – E-Commerce Platform</strong> - May 2026
+                  <p>
+                    <strong>Technologies:</strong> React.js, Node.js,
+                    Express.js, MongoDB, JWT
+                  </p>
+                  <p>
+                    Built a full-stack e-commerce application inspired by Amazon
+                    and Flipkart with secure JWT authentication, product
+                    filtering, sorting, and REST API integration.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Nxt Watch – YouTube Clone</strong>
+                  <p>
+                    <strong>Technologies:</strong> React JS, JavaScript, CSS,
+                    Bootstrap, REST API
+                  </p>
+                  <p>
+                    Developed a video streaming platform with login
+                    authentication, trending videos, gaming videos, and saved
+                    videos functionality.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section education">
+              <h2>Education</h2>
+
+              <p>
+                <strong>MCA (Master of Computer Applications)</strong> -
+                Invertis University (2024 - 2026)
+              </p>
+
+              <p>
+                <strong>BBA (Bachelor of Business Administration)</strong> -
+                Hierank Business School, Noida (2021 - 2024)
+              </p>
+
+              <p><strong>12th</strong> - Rosy Public School (2020)</p>
+
+              <p><strong>10th</strong> - Rosy Public School (2018)</p>
+            </div>
+
+            <div class="section competencies">
+              <h2>Technical Skills</h2>
+
+              <ul>
+                <li>
+                  <strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript,
+                  React.js, Next.js, Tailwind CSS, Bootstrap
+                </li>
+
+                <li><strong>Backend:</strong> Node.js, Express.js</li>
+
+                <li><strong>Database:</strong> MongoDB, SQL</li>
+
+                <li>
+                  <strong>Other Skills:</strong> Python, Git, REST APIs, OOPs,
+                  DSA, GenAI
+                </li>
+
+                <li>
+                  <strong>Soft Skills:</strong> Communication, Team Management,
+                  Problem Solving, Adaptability
+                </li>
+              </ul>
+            </div>
+
+            <div class="section certifications">
+              <h2>Certifications</h2>
+
+              <ul>
+                <li>Python Programming</li>
+                <li>Web Development (React, Node.js, MongoDB, JavaScript)</li>
+                <li>SQL and Relational Databases</li>
+              </ul>
+            </div>
+
+            <div class="section achievements">
+              <h2>Achievements</h2>
+
+              <ul>
+                <li>
+                  Participated in a Hackathon organized by Invertis University
+                  and successfully completed the project within the deadline.
+                </li>
+              </ul>
+            </div>
+
+            <div class="section hobbies">
+              <h2>Hobbies</h2>
+
+              <ul>
+                <li>Exploring New Technologies</li>
+                <li>Playing Chess and Table Tennis</li>
+                <li>Building Creative Web Applications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education section -->
+      <section id="education">
+        <div class="container py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom border-dark" data-aos="fade-up">
+            Education
+          </h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col p-3">
+              <div class="education p-3 rounded" data-aos="flip-right">
+                <i class="fa-solid fa-graduation-cap fs-2 mb-4"></i>
+
+                <h3 class="fs-3">BBA (2021-2024)</h3>
+                <p class="fs-5">CHAUDHARY CHARAN SINGH UNIVERSITY</p>
+                <p>Passed the examination in 2024.</p>
+              </div>
+            </div>
+
+            <div class="col p-3">
+              <div class="education p-3 rounded" data-aos="flip-right">
+                <i class="fa-solid fa-graduation-cap fs-2 mb-4"></i>
+
+                <h3 class="fs-3">Web Developer Course (2022-2024)</h3>
+                <p class="fs-5">Nxtwave CCBP 4.0 Academy</p>
+                <p>Passed the examination in 2024.</p>
+              </div>
+            </div>
+
+            <div class="col p-3">
+              <div
+                class="education p-3 rounded"
+                style="height: 250px"
+                data-aos="flip-right"
+              >
+                <i class="fa-solid fa-graduation-cap fs-2 mb-4"></i>
+
+                <h3 class="fs-3">MCA (2024-2026)</h3>
+                <p class="fs-5">INVERTIS UNIVERSITY</p>
+                <p>will pass the examination in 2026.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills section -->
+      <section id="skills" class="py-5">
+        <h2 class="text-center mb-5" data-aos="fade-up">My Skills</h2>
+
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <!-- HTML -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-html5 display-4 mb-3"></i>
+                <h6>HTML5</h6>
+              </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-css3-alt display-4 mb-3"></i>
+                <h6>CSS3</h6>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-js display-4 mb-3"></i>
+                <h6>JavaScript</h6>
+              </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-bootstrap display-4 mb-3"></i>
+                <h6>Bootstrap</h6>
+              </div>
+            </div>
+
+            <!-- React -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-react display-4 mb-3"></i>
+                <h6>React.js</h6>
+              </div>
+            </div>
+
+            <!-- Next.js -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-layer-group display-4 mb-3"></i>
+                <h6>Next.js</h6>
+              </div>
+            </div>
+
+            <!-- Node.js -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-node-js display-4 mb-3"></i>
+                <h6>Node.js</h6>
+              </div>
+            </div>
+
+            <!-- MongoDB -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-database display-4 mb-3"></i>
+                <h6>MongoDB</h6>
+              </div>
+            </div>
+
+            <!-- SQL -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-database display-4 mb-3"></i>
+                <h6>SQL</h6>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-python display-4 mb-3"></i>
+                <h6>Python</h6>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-brands fa-github display-4 mb-3"></i>
+                <h6>GitHub</h6>
+              </div>
+            </div>
+
+            <!-- Tailwind -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-wind display-4 mb-3"></i>
+                <h6>Tailwind CSS</h6>
+              </div>
+            </div>
+
+            <!-- TypeScript -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-code display-4 mb-3"></i>
+                <h6>TypeScript</h6>
+              </div>
+            </div>
+
+            <!-- DSA -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-brain display-4 mb-3"></i>
+                <h6>DSA</h6>
+              </div>
+            </div>
+
+            <!-- Gen AI -->
+            <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+              <div class="skill-card text-center p-4 shadow rounded-4">
+                <i class="fa-solid fa-robot display-4 mb-3"></i>
+                <h6>Gen AI</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects section -->
+      <section id="projects" class="py-5 my-5">
+        <h2 class="text-center mb-5" data-aos="fade-up">My Projects</h2>
+
+        <div class="container">
+          <div class="row g-4">
+            <!-- Fillip -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="fillip.png"
+                  class="card-img-top"
+                  alt="Fillip Project"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fillip Marketing App</h5>
+                  <p class="card-text small">
+                    Developed a modern marketing application using Next.js,
+                    Tailwind CSS, Node.js, and MongoDB with responsive UI,
+                    backend APIs, and email integration using Nodemailer.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <div class="d-flex gap-3 fs-4">
+                      <a href="https://fillip-app.vercel.app/" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <div class="d-flex gap-3 fs-4">
+                      <a
+                        href="https://github.com/JatinGupta007/fillip-app"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ecommerce -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="ecomerce_app_image.png"
+                  class="card-img-top"
+                  alt="Ecommerce"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nxt Trendz E-Commerce</h5>
+                  <p class="card-text small">
+                    Built a full-stack e-commerce platform inspired by Amazon
+                    and Flipkart with JWT authentication, product filtering,
+                    sorting, and REST API integration.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <div class="d-flex gap-3 fs-4">
+                      <a href="https://product-ecommerce-app-nm5n.vercel.app/" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <div class="d-flex gap-3 fs-4">
+                      <a
+                        href="https://github.com/JatinGupta007/product-ecommerce-app"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Apna OPD -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="apnaopd.png"
+                  class="card-img-top"
+                  alt="Apna OPD"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Apna OPD</h5>
+                  <p class="card-text small">
+                    Contributed to a healthcare platform using React.js,
+                    Next.js, Node.js, and MongoDB with authentication,
+                    dashboards, responsive UI, and scalable backend modules.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a
+                        href="https://github.com/YashikkYadav/apna-opd"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    <!-- <a href="https://apnaopd.com/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Yashik Yadav -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="yashik.png"
+                  class="card-img-top"
+                  alt="Agency Website"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yashik Yadav Agency Website</h5>
+                  <p class="card-text small">
+                    Designed and developed a professional agency website using
+                    Next.js and Tailwind CSS with modern UI, responsive design,
+                    and optimized performance.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a
+                        href="https://github.com/JatinGupta007/Yashik"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    <a href="https://yashik.vercel.app/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hemendra -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="doctor.png"
+                  class="card-img-top"
+                  alt="Doctor Website"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hemendra Agrawal Website</h5>
+                  <p class="card-text small">
+                    Developed a responsive doctor portfolio website using
+                    Next.js and Tailwind CSS with clean UI, service sections,
+                    and contact integration.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a
+                        href="https://github.com/YashikkYadav/Dr.-Hemendra-Agrawal"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    <a href="https://orthopedicjaipur.com/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Digital Website -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="digital.png"
+                  class="card-img-top"
+                  alt="Digital Website"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Digital Website</h5>
+                  <p class="card-text small">
+                    Created a responsive digital business website using Next.js
+                    and Tailwind CSS with smooth UI components and modern
+                    landing page design.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a
+                        href="https://github.com/JatinGupta007/digital"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    <a href="https://digital-bice.vercel.app/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Your Mood -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="mood.png"
+                  class="card-img-top"
+                  alt="Your Mood"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Your Mood App</h5>
+                  <p class="card-text small">
+                    Developed a mood tracking application with interactive UI,
+                    personalized user experience, and responsive design using
+                    React.js.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a href="https://github.com/JatinGupta007/your-mood" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Smart Canteen -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="smart-canteen.png"
+                  class="card-img-top"
+                  alt="Smart Canteen"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Smart Canteen</h5>
+                  <p class="card-text small">
+                    Built a smart canteen management system for food ordering,
+                    menu handling, and responsive user interaction using modern
+                    web technologies.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a href="https://github.com/JatinGupta007/SmartCanteen" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nxt Watch -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="Nxt_watchapp_pic.png"
+                  class="card-img-top"
+                  alt="Nxt Watch"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nxt Watch App</h5>
+                  <p class="card-text small">
+                    Developed a YouTube clone with authentication, trending
+                    videos, gaming section, saved videos, and dark/light theme
+                    support using React.js.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a href="https://github.com/JatinGupta007/NxtWatchApp" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://nxtwatchbyjitin.ccbp.tech/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Event Website -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="event.png"
+                  class="card-img-top"
+                  alt="Event Website"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Event Website</h5>
+                  <p class="card-text small">
+                    Created a responsive event management website with modern
+                    animations, event details, registration forms, and
+                    attractive UI design.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a
+                      href="https://github.com/JatinGupta007/event-website"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://event-website-one.vercel.app/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weather -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="Weatherapp_pic.png"
+                  class="card-img-top"
+                  alt="Weather App"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Weather App</h5>
+                  <p class="card-text small">
+                    Built a weather forecasting app using React.js and Weather
+                    APIs with real-time weather updates and responsive UI
+                    design.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a href="https://github.com/JatinGupta007/Weather-app" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://weather-app-theta-five-11.vercel.app/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Emoji Game -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow border-0" data-aos="fade-up">
+                <img
+                  src="emoji_game_image.png"
+                  class="card-img-top"
+                  alt="Emoji Game"
+                  style="height: 250px; object-fit: contain"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Emoji Game</h5>
+                  <p class="card-text small">
+                    Designed a fun memory game using React.js with randomized
+                    emoji selection, score tracking, and interactive gameplay
+                    experience.
+                  </p>
+
+                  <div class="d-flex gap-3 fs-4">
+                    <a href="https://github.com/JatinGupta007/Emoji-Game" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://jitinemojigame.ccbp.tech/" target="_blank">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section id="contact" data-aos="fade-up">
+        <div class="container">
+          <div class="row my-5 py-5">
+            <div
+              class="col-md-6 d-flex flex-column align-items-start justify-content-center"
+            >
+              <h1 class="display-5 fw-bold mb-3">Contact Me</h1>
+              <p class="fs-5">
+                Prefer email? Reach out to me at
+                <i class="fa-solid envelope"></i>
+                <a href="mailto:rockjatin0748@gmail.com" target="_blank"
+                  >rockjatin0748@gmail.com</a
+                >
+              </p>
+              <p class="fs-5">
+                <i class="fa-solid fa-phone"></i>+91 6394184834
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="text-center">
-        <p class="fs-5">Made With <i class="fa-solid text-danger fa-heart"></i> By Jitin Gupta</p>
+      <p class="fs-5">
+        Made With <i class="fa-solid text-danger fa-heart"></i> By Jitin Gupta
+      </p>
     </footer>
     <!-- Bootstrap scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit/dist/typeit.min.js"></script>
 
     <!-- Animation scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
 
     <!-- Typing Deferent Name script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Initialize TypeIt
-            new TypeIt("#typed-text", {
-                speed: 200,
-                waitUntilVisible: true,
-                loop: true
-            })
-                .type("web developer.")
-                .pause(200)
-                .delete(14)
-                .type("Freelancer.")
-                .delete(10)
-                .pause(200)
-                .delete(10)
-                .type("Student.") // Text to be typed
-                .go(); // Start typing
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize TypeIt
+        new TypeIt("#typed-text", {
+          speed: 200,
+          waitUntilVisible: true,
+          loop: true,
+        })
+          .type("Full Stack Developer.")
+          .pause(200)
+          .delete(21)
+          .type("Freelancer.")
+          .delete(10)
+          .pause(200)
+          .delete(10)
+          .go(); // Start typing
+      });
     </script>
 
     <!-- importing index.js file -->
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
